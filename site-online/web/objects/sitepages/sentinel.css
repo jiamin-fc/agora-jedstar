@@ -1,0 +1,587 @@
+/* 
+
+/***** MYAGORA PAGE *****/
+
+.myagora-page {
+	width: 80vw;
+	min-height: 80vh;
+	margin-left: 10vw;
+	padding-top: 2vw;
+	transition: 0.5s;
+}
+
+.myagora-page .title {
+	padding-top: 2vw;
+}
+
+.myagora-page .title h1 {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3vw;
+	text-transform: uppercase;
+	font-feature-settings: 'calt' off;
+	margin: 0px;
+}
+
+.myagora-page .title h2{
+	font-size: 2vw;
+}
+
+.myagora-page.active {
+	filter:blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+
+.myagora-page .boost-title p{
+	font-size: 1.2vw;
+}
+
+.myagora-page .boost-subtitle p{
+	font-size: 0.8vw;
+}
+
+.myagora-cards {
+	display: flex;
+	margin: 3vw 0vw 7vw 0vw;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.myagora-cards .title {
+	display:none;
+	text-align: center;
+}
+
+.myagora-cards .title h2 {
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.myagora-cards .card {
+	background: linear-gradient(180deg, #262C33 55.21%, rgba(38, 44, 51, 0) 100%);
+	height: 25vw;
+}
+
+.myagora-cards .card * {
+	cursor: pointer;
+}
+
+/***** HEADER *****/
+
+.header.agora {
+	padding-top: 0px;
+	position: relative;
+}
+
+.header.agora .bg-image img {
+	width: 100vw;
+	height: 15.1vw;
+}
+
+.agora .logo {
+	position: absolute;
+	top: 6vw;
+	left: calc(50% - 15vw);
+}
+
+.agora .logo img {
+	width: 30vw;
+}
+
+.back-button {
+	padding-top: 9vh;
+	padding-bottom: 2vw;
+}
+
+
+
+
+/***** COLORS *****/
+
+.secretrare {
+	background-color: #E431FF;
+}
+
+.ultrarare{
+	background-color: #31FF5D;
+}
+
+.rare{
+	background-color: #FFD131;
+}
+
+.uncommon{
+	background-color: #318DFF;
+}
+
+.common{
+	background-color: #D9D9D9;
+}
+
+.nft-detail-boosts{
+	gap: 0.5vw;
+    justify-content: space-around;
+}
+
+.view-more-button{
+	display: flex;
+	justify-content: center;
+	margin: 5vh;
+}
+
+.hide{
+	display: none;
+}
+
+#myagora-title{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4vh;
+	padding-bottom: 3vh;
+}
+
+.resync-button{
+	display: flex;
+	align-items: center;
+}
+
+#myagora-collectibles #noCards{
+	display:none;
+	text-align: center;
+}
+
+#myagora-boost #noBoosts{
+	display:none;
+	text-align: center;
+}
+
+#myagora-boost .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#noCards h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#noBoosts h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#viewMoreBoost{
+	display: contents;
+}
+
+.boost{
+    width: 36vw;
+    height: 40vh;
+}
+
+.boost .boost-stat p{
+	color: #2CF07A;
+}
+
+.boost .boost-check{
+    visibility: hidden;
+}
+
+.boost-title h1{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-feature-settings: 'calt' off;
+    margin: 0px;
+}
+
+.boost button{
+    bottom: -20vh;
+    position: inherit;
+}
+
+.boost * p{
+    color:white;
+}
+
+.boost .auth-fee{
+    visibility: hidden;
+}
+
+.view-nft{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+
+.view-nft:hover{
+	display: block;
+}
+
+.info-button{
+	display: flex;
+	padding: 1vw;
+	padding-right: 0vw;
+}
+
+.info-button img{
+	width: 60%;
+}
+
+.info-button img:hover{
+	cursor: pointer;
+}
+
+.auth.disabled{
+    visibility: hidden;
+    background: grey;
+	opacity: 0.5;
+    pointer-events: none;
+}
+
+.activate.disabled{
+    background: grey;
+	opacity: 0.5;
+    pointer-events: none;
+}
+
+.popup{
+	position: fixed;
+	text-align: center;
+	height: 30vh;
+	width: 50vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #262C33;
+	border-radius: 0px;
+	background: #13181D;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	overflow-y: scroll !important;
+}
+
+#info-popup.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+#info-popup .title{
+	display: inline-flex;
+	padding-top: 3vh;
+}
+
+#info-popup .title h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#info-popup p{
+	padding: 3vh;
+}
+
+.close-button {
+	position: absolute;
+	right: 0;
+}
+
+.close-button img{
+	cursor: pointer;
+	width: 40%;
+}
+
+#resync-button-popup div{
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+#complete-popup.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+#complete-popup .title{
+	display: inline-flex;
+	padding-top: 3vh;
+}
+
+#complete-popup .title h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#complete-popup p{
+	padding: 3vh;
+}
+
+#close-button-popup div{
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+#nft-popup {
+	height: 80vh;
+	width: 80vw;
+}
+
+#nft-popup .cards{
+	margin: 3vw 2vw 7vw 2vw;
+	text-align: left;
+	justify-content: left;
+	gap: 1.5vw;
+}
+
+#nft-popup.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup .title{
+	display: inline-flex;
+	padding-top: 3vh;
+}
+
+.popup .title h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.popup p{
+	/* padding: 3vh; */
+}
+ .cards {
+	flex-wrap: wrap;
+	gap: 2.5vw;
+	justify-content: unset;
+ }
+
+ /* .cards::after {
+	content: "";
+  	flex: auto;
+ } */
+
+ .card {
+	cursor: pointer;
+ }
+
+ /**** MY AGORA - MOBILE ***/
+
+@media only screen and (max-width: 767px){
+	.myagora-page {
+		width: 90vw;
+    margin-left: 5vw;
+	}
+	.myagora-page .rainbow-border{
+		width: 90vw;
+		margin: 3vw 0vw;
+	}
+
+	#myagora-boost .title{
+		display: block;
+	}
+
+	.myagora-page .title h1 {
+    	font-size: 7vw;
+		padding-bottom: 2vw;
+	}
+
+	.myagora-page .title h2 {
+    	font-size: 5vw;
+		padding-bottom: 2vw;
+	}
+
+	.myagora-cards {
+    justify-content: flex-start;
+		gap: 5vw;
+	}
+	.header.agora {
+    padding-top: 20vw;
+	}
+	.header.agora .bg-image img {
+		width: 150vw;
+    height: 22.65vw;
+    margin-left: -25vw;
+	}
+	.agora .logo {
+    top: 25vw;
+    left: calc(50% - 25vw);
+	}
+	.agora .logo img {
+    width: 50vw;
+	}
+	.back-button button div {
+		padding: 1.2vw 3vw .4vw 3vw;
+	}
+
+	.myagora-page .nft-detail-boosts{
+		gap: 1.5vw;
+		justify-content: center;
+	}
+
+	.myagora-page .boost{
+		height: 25vw;
+	}
+
+	.myagora-page .boost-title p{
+		font-size: 1.2em;
+	}
+
+	.myagora-page .boost-subtitle p{
+		font-size: 0.8em;
+	}
+
+	.myagora-page .cards{
+		justify-content: center;
+		gap: 5vw;
+	}
+
+	.popup{
+		height: 40vh;
+		width: 80vw;
+	}
+
+	#nft-popup{
+		width: 90vw;
+	}
+
+	.currency-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+	}
+}
+
+
+/* NEW */
+
+.index-container {
+	padding: 100px 10vw;
+	width: 80vw;
+}
+
+.title {
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.title span {
+	color: #1C84FE;
+}
+
+.button button:disabled {
+	background: #6B6B6B;
+	cursor: not-allowed;
+}
+
+.button button:disabled div {
+	color: #6B6B6B;
+	text-shadow: none;
+	background: #262C33;
+}
+
+.button .activateBtn {
+	display: none;
+}
+
+.currency-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.currency {
+	text-align: center;
+	border: 1px solid gray;
+	width: 300px;
+	padding: 20px 0px;
+}
+
+.currency-logo {
+	width: 150px;
+	height: 150px;
+	filter: grayscale(100%);
+	margin: auto;
+	transition: 1s;
+}
+
+.currency-logo img {
+	width: 100%;
+}
+
+.button {
+	padding-bottom: 10px;
+}
+
+.currency-message p {
+	font-size: 1em;
+	color: #FFD131;
+}
+
+.activate {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.none{
+	display: none;
+}
+
+/*** AUTHORISED ***/
+
+.currency.authorised .currency-logo {
+	filter: grayscale(100%);
+}
+
+.currency.authorised .currency-message p {
+	color: #FFFFFF;
+}
+
+.currency.authorised .button .authoriseBtn {
+	display: none;
+}
+
+.currency.authorised .button .activateBtn {
+	display: block;
+}
+
+/*** ACTIVATED ***/
+
+.currency.activated .currency-logo {
+	filter: grayscale(0%);
+}
+
+.currency.activated .currency-message p {
+	color: #31FF5D;
+}
+
+.currency.activated .button .authoriseBtn, .currency.activated .button .activateBtn {
+	display: none;
+}

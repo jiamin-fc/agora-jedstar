@@ -1,0 +1,7 @@
+{
+  "title": "My Agora",
+  "description": "Your dedicated dashboard to review all your Jedstar Gaming SFTs in one place",
+  "canonical_url": "https://agora.jedstar.app/view",
+  "post_graphic_url": "/img/agora/web_preview_v01.jpg",
+  "additionalLoadFullJS": "shield('/js-lib/KV-TEMP.js', function(){shield('/js/agora.js', function(){ shield('/js/mine.js', null, 'head', 'script', 0); }, 'head', 'script', 0);}, 'head', 'script', 0);"
+}

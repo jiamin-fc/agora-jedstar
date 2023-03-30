@@ -1,0 +1,7 @@
+{
+  "title": "SFT Viewer - Agora",
+  "description": "View your SFT, learn about all the utilities it unlocks, and control what it does!",
+  "canonical_url": "https://agora.jedstar.app/view",
+  "post_graphic_url": "/img/agora/web_preview_v01.jpg",
+  "additionalLoadFullJS": "shield('/js-lib/KV-TEMP.js', function(){shield('/js/agora.js', function(){ shield('/js/view.js', null, 'head', 'script', 0); }, 'head', 'script', 0);}, 'head', 'script', 0);"
+}

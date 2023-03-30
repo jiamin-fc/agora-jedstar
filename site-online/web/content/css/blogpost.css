@@ -1,0 +1,594 @@
+body, h3, ul {
+	color: #ffffff;
+	overflow-x: visible;
+	overflow-y: visible;
+}
+a.external{
+  color: #21B5FF;
+  display: inline-block;
+  padding-right: 1.3em;
+  background: url(https://assets.jedstar.space/img/link_popout.webp) no-repeat;
+  background-position: center right;
+  background-size: 1em;
+}
+button.back {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+    border-radius: 10em;
+    border: 0px;
+    padding: 0.6em 1.2em 0.5em 1.2em;
+}
+h2 {https://en.wikipedia.org/wiki/Multiplayer_online_battle_arena
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.1vw;
+	line-height: 1.4em;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+  }
+.navigation {
+	z-index: 999;
+}
+.section {
+	width: 68vw;
+	margin: 0 14vw;
+	position: relative;
+}
+.section.before-footer {
+	width: 66vw;
+}
+.video {
+	top: 5em;
+}
+.video img {
+	width: 70vw;
+	object-fit: cover;
+	object-position: top center;
+	z-index: 99;
+  height: 39.375vw;
+}
+.section.blog-content-container.bg-black {
+	top: 4.5em;
+	padding: 10vh 6vw;
+	width: 58vw;
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+}
+.bg-black {
+	background-color: #000;
+}
+.blog-info {
+	display: flex;
+}
+.blog-content-left {
+	width: 40vw;
+}
+.blog-content-right {
+	width: 15vw;
+	margin-left: 6vw;
+}
+.blog-content-right-container {
+	position: sticky;
+	top: 11vh;
+}
+p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+.blog-calendar, .blog-tag {
+	padding-right: 1rem;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.blog-calendar img, .blog-tag img {
+	width: 1em;
+	object-fit: contain;
+	margin-right: 0.4em;
+}
+.blog-calendar.capitalise, .blog-tag.capitalise {
+	font-weight: 600;
+	font-size: 0.8vw;
+}
+.blog-calendar, .blog-tag {
+	color: #939393;
+}
+.blog-info {
+	border-bottom: 1px solid #939393;
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+.blog-text {
+	border-bottom: 1px solid #939393;
+	padding-bottom: 3em;
+}
+.blog-text h3, .blog-text ul{
+    color: #FFF;
+  }
+.blog-text p img{
+  width: 100%;
+}
+.download-lower {
+	position: absolute;
+	bottom: 0px;
+	font-family: 'Lato', sans-serif !important;
+	color: #fff;
+	font-size: 0.8vw;
+	line-height: 1.4em;
+	width: 10em;
+}
+.download-lower h2 {
+	font-family: 'Lato', sans-serif !important;
+	font-size: 1vw;
+	margin-bottom: 0.3em;
+	padding-right: 5em;
+}
+.download-line1 h2 {
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+.other-news {
+	flex-direction: column;
+	display: flex;
+	width: 58vw;
+	margin: 0 14vw;
+	padding: 0 6vw 5vh 6vw;
+}
+.news-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.news-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+.newsletter {
+    margin-bottom: 1em;
+}
+.news, .bloglist {
+	width: 31%;
+}
+.bloglist {
+	margin-right: 2%;
+}
+.news-input span {
+	background: linear-gradient(90deg, #37A4F8 0%, #DB1EBF 100%);
+	font-size: 2.5vw;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.video h1 {
+	position: absolute;
+	font-size: 2.7vw;
+	padding: 0 3vw;
+	color: #fff;
+	bottom: 1em;
+}
+.download-links {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.download-links a {
+	margin-right: 0.5rem;
+}
+.share {
+	margin-top: 2rem;
+}
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+}
+.share-icon {
+	margin-right: 0.3em;
+}
+.news-line1 .capitalise {
+	margin-bottom: 0;
+}
+.download {
+	background: url("../img/silvervolt_android_charging_v03.webp");
+	background-size: 100%;
+	width: calc(15vw - 2rem);
+	height: calc(43.5vw - 2rem);
+	padding: 1rem;
+	position: relative;
+	margin-top: 1rem;
+}
+.download-button button {
+	background: linear-gradient(92.85deg, #34A6F9 -1.42%, #E714BB 99.17%);
+	width: 15vw;
+	padding: 10px;
+	margin-left: -1rem;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 0.7vw;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	border: none;
+	font-weight: 700;
+}
+.bloglist-image img {
+	width: 100%;
+	height: 16vh;
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 1vh;
+}
+.bloglist-line1 {
+	display: flex;
+}
+.bloglist-title h2 a{
+  color: #FFF;
+}
+.calendar, .tag {
+	color: #6b6b6b;
+	font-weight: 600;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	font-size: 0.7vw;
+	text-transform: uppercase;
+}
+.calendar {
+	margin-right: 0.6em;
+}
+.calendar img, .tag img {
+	object-fit: contain;
+	margin-right: 0.5em;
+}
+.calendar span, .tag span {
+	color: #6b6b6b;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.read-more a {
+	text-decoration: none;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 15px;
+	/* identical to box height */
+
+	letter-spacing: 0.02em;
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.blog-text p {
+    margin-bottom: 2em;
+}
+.news-input {
+	display: flex;
+}
+.news-input input {
+	padding: 0.8em 1em;
+	border-radius: 5em;
+	width: 13vw;
+	border: none;
+	margin-right: 0.5em;
+	font-family: 'Lato', sans-serif !important;
+}
+.news-input input:focus {
+	outline: none;
+}
+.news-line1 .capitalise {
+    margin-top: 0;
+}
+.news-input img {
+	width: 2em;
+	height: 2em;
+}
+.read-more svg {
+	width: 1vw;
+	height: 1vw;
+	margin: -2px;
+}
+
+@media only screen and (max-width: 767px) {
+	button.back {
+		display: none;
+	}
+	.section {
+		width: auto;
+		margin: 0;
+	}
+	.section.before-footer {
+		width: auto;
+	}
+	.section.blog-content-container.bg-black {
+		width: 100vw;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	.video h1 {
+		font-size: clamp(1.5rem, 3.5vw, 6.5vw); /*6.5vw;*/
+		bottom: 0;
+		line-height: clamp(1.5rem, 3.5vw, 6.5vw); /*1.2em;*/
+	}
+	.video img {
+		width: 100vw;
+		height: 280px;
+	}
+	.blog-content-left {
+		width: 100%;
+		padding: 0 4vw;
+	}
+	.blog-calendar.capitalise, .blog-tag.capitalise {
+		font-weight: 700;
+		font-size: 3.2vw;
+	}
+	.blog-info {
+		border-bottom: 1px solid #939393;
+		margin-bottom: 3vh;
+		padding-bottom: min(0.7em, 1vh); /*3vh*/;
+		margin-top: 3vh;
+	}
+	.blog-calendar img, .blog-tag img {
+		width: 1.1em;
+	}
+	p {
+		font-size: 4vw;
+	}
+	.blog-text {
+		padding-right: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	.blog-content-right {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 4vw;
+		margin-top: 3vh;
+	}
+	.news-input input {
+		width: 100%;
+		margin-left: 0;
+	}
+	.download {
+		background: url("../img/mobile-banner-img.webp");
+		padding: 0;
+		position: relative;
+    width: 90vw;
+    height: 110vw;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 4em;
+	}
+	.download-line1 h2 {
+		font-size: 7.8vw;
+		line-height: 1.3em;
+		padding: 0 6vw;
+	}
+	.download-lower {
+		font-size: 4vw;
+		line-height: 1.2em;
+		padding: 0 6vw;
+    bottom: 32px;
+	}
+	.download-lower h2 {
+		font-size: 4.8vw;
+		line-height: 1.2em;
+	}
+	.download-button button {
+		width: 88vw;
+		font-size: 3.7vw;
+		padding: 1em 0;
+	}
+	h2 {
+		font-size: 5.2vw;
+		line-height: 1.3em;
+	}
+	.blog-content-right {
+		display: flex;
+		flex-direction: column;
+	}
+	.share {
+		order: 1;
+		margin: 0 0 4vh 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #939393;
+		padding-bottom: 2vh;
+	  }
+	.share h2 {
+		font-size: 4vw;
+	}
+	.newsletter {
+		order: 2;
+	}
+	.download {
+		order: 3;
+		margin-bottom: 6vh;
+	}
+	.news-container {
+		display: flex;
+		flex-wrap: wrap;
+    justify-content: flex-start;
+		flex-direction: column;
+	}
+	.news, .bloglist {
+		width: 100%;
+		margin-bottom: 4vh;
+	}
+	.calendar, .tag {
+		font-size: 3vw;
+	}
+	.bloglist-title h2 {
+		font-size: 4.8vw;
+	}
+	.bloglist-image img {
+		height: 200px;
+	}
+	.title {
+		padding-top: 2vh;
+		border-top: 1px solid #939393;
+	}
+	.read-more svg {
+		width: 4vw;
+		height: 4vw;
+	}
+	.blog-content-right {
+		position: static;
+	}
+}
+
+@media only screen and (min-width: 430px) and (max-width: 767px) {
+  .download-lower{ margin-left: 51vw; max-width: 29vw;}
+  .download-button{ margin-left: -51vw; }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .download-button button{ width: 89vw; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.section {
+		width: 84vw;
+		margin: 0vh 8vw;
+	}
+	.section.before-footer {
+		width: 80vw;
+	}
+	.video {
+		height: 22em;
+	}
+	.video img {
+		width: 84vw;
+		height: 23em;
+	}
+	.other-news {
+		width: 76vw !important;
+		padding: 0 4vw 2em 4vw;
+	}
+	.news-container {
+		flex-wrap: wrap;
+	}
+	.news,.bloglist {
+		width: 48%;
+		margin-bottom: 2.5em;
+	}
+	.section.blog-content-container.bg-black {
+		width: 76vw;
+	}
+	.bloglist-image img {
+		height: 12em;
+	}
+	.calendar span, .tag span {
+		font-size: 1.4vw;
+	}
+	p {
+		font-size: 1.8vw !important;
+	}
+	a.readmore {
+		font-size: 1.6vw;
+	}
+	.bloglist-title h2 {
+		font-size: 2vw;
+	}
+	.calendar {
+		margin-right: 1.2em;
+	}
+	.title h2 {
+		font-size: 2.4vw;
+	}
+	.news-input input {
+		font-size: 1.6vw;
+		width: 100%;
+		padding: 0.7em 1em;
+	}
+	.share h2 {
+		font-size: 1.8vw;
+	}
+	.blog-content-left {
+    width: 55vw;
+	}
+	.download {
+		background-size: cover;
+		width: auto;
+		height: 28em;
+		padding: 0;
+		margin-top: 0;
+	}
+	.download-line1 h2 {
+		font-size: 2.1vw;
+		line-height: 1.5em;
+	}
+	.download-lower h2 {
+		font-size: 2vw;
+	}
+	.download-lower {
+		width: 100%;
+		font-size: 1.6vw;
+	}
+	.download-button button {
+		font-size: 1.4vw;
+		margin-left: 0;
+	}
+	.download-line1, .download-line2, .download-line3, .download-links {
+		padding: 0.8em 0.8em 0 0.8em;
+	}
+	button.back {
+		font-size: 1.6vw;
+	}
+	.news-input span {
+		font-size: 2em;
+	}
+	.news-line1 h2 {
+		font-size: 1.8vw;
+		letter-spacing: 0;
+	}
+	.news-input input::placeholder {
+		font-size: 1.6vw;
+	}
+	.news-line1 .capitalise {
+		margin-bottom: 1vh;
+	}
+	.bloglist-container {
+		width: 74vw;
+	}
+	.bloglist-desc {
+		height: auto;
+		margin-bottom: 2em;
+	}
+	.bloglist h2.capitalise {
+		font-size: 2vw;
+		padding-top: 0.4em;
+		padding-bottom: 0.5em;
+	}
+	.bloglist {
+		padding: 2em 0em;
+	}
+	.blog-calendar.capitalise, .blog-tag.capitalise {
+    font-weight: 600;
+    font-size: 1.3vw;
+	}
+	.section.blog-content-container.bg-black {
+		top: 7vh;
+		padding: 2em 4vw;
+	}
+	.read-more svg {
+		width: 2vw;
+		height: 2vw;
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Purchase your own SFT - Agora",
+  "description": "Buy, sell and trade NFT's from our Our GENESIS Mint. Our JEDSTAR Collections feature three series of NFT's, fifteen pieces in total, all hand painted in-house by JEDSTAR Gaming’s very own Creative Team!",
+  "canonical_url": "https://agora.jedstar.app/",
+  "post_graphic_url": "/img/agora/web_preview_v01.jpg",
+  "additionalLoadFullJS": "shield('/js-lib/KV-TEMP.js', function(){shield('/js/agora.js', function(){ shield('/js/buy.js', null, 'head', 'script', 0); }, 'head', 'script', 0);}, 'head', 'script', 0);"
+}

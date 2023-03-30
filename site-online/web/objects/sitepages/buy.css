@@ -1,0 +1,498 @@
+.loading-screen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+}
+
+.loading-screen img {
+	width: 5vw;
+	height: 5vw;
+}
+
+
+/***** NFT INDIVIDUAL PAGE *****/
+
+.nft-content {
+	padding: 0vw 10vw;
+	width: 80vw;
+	padding-top: 2vw;
+	position: relative;
+}
+
+.back-button {
+	padding-bottom: 2vw;
+}
+
+/***** NFT INDIVIDUAL - HEADER *****/
+
+.header.agora {
+	padding-top: 0px;
+	position: relative;
+}
+
+.header.agora .bg-image img {
+	width: 100vw;
+	height: 15.1vw;
+}
+.header.agora .logo{
+	position: absolute;
+}
+.agora .logo {
+	/*position: absolute;*/
+	top: 6.5vw;
+	left: calc(50% - 15vw);
+}
+
+.agora .logo img {
+	width: 30vw;
+}
+
+/***** NFT INDIVIDUAL - DETAILS *****/
+
+.nft-details {
+	display: flex;
+}
+
+/***** NFT INDIVIDUAL - INTRO *****/
+
+.nft-intro {
+	width: 25vw;
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 8vw;
+  align-self: flex-start;
+	margin-right: 1vw;
+}
+
+.nft-card-image img {
+	height: 34.42vw;
+	width: 25vw;
+}
+
+.nft-card-image::before {
+	content: "";
+	width: 55vw;
+	height: 46.5vw;
+	background: url(../img/agora/glow_v01.webp);
+	position: absolute;
+	display: block;
+	background-size: 100% 100%;
+	z-index: -1;
+	left: -10vw;
+	top: -2vw;
+}
+
+.nft-basic {
+	padding-bottom: 2vw;
+}
+
+.nft-respec {
+	padding: 1vw 0vw 2vw 0vw;
+	width: 50%;
+}
+
+.nft-respec h3 {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.5vw;
+	text-align: left;
+	margin: 0px;
+}
+h3#price.loading{
+	display: inline-block;
+	width: 7em;
+	padding: 0 !important;
+}
+.agora-buy-price {
+	display: flex;
+}
+
+.agora-buy-price h3#price{
+	margin-left: 0.5em;
+}
+
+.pricecurrency-wrapper {
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	margin-left: 0.5vw;
+}
+
+#pricecurrency {
+	border: 0px;
+	background: #13181D;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.3vw;
+	margin: -1px;
+	color: #ffffff;
+}
+
+.availablein {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+}
+.nft-respec .enabled{
+	width: 100%;
+	padding: 3px;
+}
+
+.nft-respec .disabled {
+	width: 100%;
+	background: #827A8E;
+	padding: 3px;
+}
+
+.nft-respec button div {
+	padding: 1.3vw 2vw 1.1vw 2vw;
+	font-size: 1.5vw;
+	color: ##827A8E;
+}
+
+/***** NFT INDIVIDUAL - DETAIL *****/
+
+.nft-detail {
+	width: 50vw;
+	padding: 2vw 2vw;
+	background: rgba(19, 24, 29,0.5);
+	z-index: 1;
+}
+
+.nft-detail .collection-title {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 1vw;
+}
+
+.nft-detail .collection-title h2.collection {
+	font-size: 1.5em;
+}
+
+.nft-detail .collection-title .social-list {
+	display: flex;
+	gap: 5px;
+	filter: grayscale(1);
+}
+
+.nft-detail .collection-title .social-list .social-icon {
+	display: block;
+}
+
+.nft-detail .collection-title .social-list .social-icon a {
+	background: white;
+	display: block;
+	border-radius: 50%;
+}
+
+.nft-detail .collection-title .social-list .social-icon a img {
+	filter: invert(1);
+	display: block;
+}
+
+.social-links {
+	display: flex;
+	gap: 0.5vw;
+	align-items: center;
+}
+
+.paragraph {
+	max-height: 3.8em;
+	overflow: hidden;
+	position: relative;
+	transition: all 1s;
+}
+
+.paragraph.loading::before, .paragraph.loading::after {
+	display: none;
+}
+
+.paragraph::before {
+	content: " ... ";
+	background: #13181D;
+	position: absolute;
+	bottom: .2em;
+	right: 2.5em;
+	cursor: pointer;
+}
+
+.paragraph::after {
+	content: "more";
+	background: #13181D;
+	position: absolute;
+	bottom: .2em;
+	right: 0px;
+	cursor: pointer;
+	color: #1C84FE;
+}
+
+.paragraph.open {
+	max-height: 100vh;
+}
+
+.paragraph.open::before, .paragraph.open::after {
+	display: none;
+}
+
+.share-icon:hover{
+	cursor: pointer;
+}
+
+.social-links .share-icon a img {
+	width: 2vw;
+	height: 2vw;
+}
+
+.nft-detail .rainbow-border {
+	width: unset;
+}
+
+.nft-detail-name .title h2 {
+	font-size: 3vw;
+}
+
+.nft-detail-name .card-rarity {
+	margin-top: 0.2vw;
+}
+
+.nft-detail-name .card-rarity p {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vw;
+}
+
+.nft-detail-attributes {
+	text-align: center;
+	border: 2px solid #262C33;
+	padding: 1vw;
+	margin-top: 3vw;
+}
+
+.nft-detail-attributes .title h2 {
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.nft-detail-attributes table {
+	width: 80%;
+  border-collapse: separate;
+  border-spacing: 5px;
+	margin: auto;
+}
+
+.nft-detail-attributes table tr td {
+	background: #262C33;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vw;
+	padding: .8vw 1vw .6vw 1vw;
+}
+
+.nft-detail-attributes table tr.disabled td.attr-bar p {
+	color: #000000;
+	background: #262C33;
+}
+
+.nft-detail-attributes table tr td.attr-bar {
+	width: 100%;
+	padding: 0px;
+}
+
+.nft-detail-attributes table tr td.attr-bar p {
+	/*background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);*/
+	width: 0%;
+	height: 1vw;
+	color: #ffffff;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vw;
+	margin: .5vw .5vw;
+	padding: .5vw .5vw .3vw .5vw;
+	display: flex;
+	align-items: center;
+	transition: all 1s;
+}
+
+.chainlink {
+	display: flex;
+	justify-content: center;
+	margin-top: 1vw;
+}
+
+.chainlink p {
+	margin: .4vw .5vw;
+}
+
+.chainlink img {
+	height: 2vw;
+}
+
+
+/**** DETAIL MOBILE ***/
+
+@media only screen and (max-width: 1024px){
+	.social-links .share-icon a img {
+		width: 3vw;
+		height: 3vw;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.nft-content {
+		overflow: hidden;
+	}
+	.back-button {
+		padding-bottom: 15vw;
+	}
+	.nft-details {
+    flex-direction: column;
+		position: relative;
+	}
+	.nft-intro {
+		width: 80vw;
+    position: initial;
+	}
+	.nft-card-image {
+		text-align: center;
+	}
+	.nft-card-image img {
+		width: 80vw;
+		height: 110.14vw;
+	}
+	.nft-card-image::before {
+		width: 140vw;
+		height: 118.36vw;
+    top: 14vh;
+	}
+	.nft-basic p {
+		margin: 1vw 0px;
+	}
+	.nft-respec {
+		width: 100%;
+	}
+	.nft-respec h3 {
+    font-size: 7vw;
+	}
+	#pricecurrency {
+    font-size: 6.5vw;
+	}
+	.nft-respec button div {
+		font-size: 4vw;
+		padding: 4vw 0vw 3.2vw 0vw;
+	}
+	.nft-detail {
+		width: 80vw;
+		padding: 0px;
+	}
+	.social-links {
+    margin-top: -0.5vw;
+	}
+	.social-links .share-icon a img {
+		width: 4vw;
+		height: 4vw;
+	}
+	.nft-detail .collection-title {
+		position: absolute;
+		top: -11vw;
+	}
+	.nft-detail .collection-title h2 {
+		font-size: 4vw;
+	}
+	.nft-detail .rainbow-border {
+		position: absolute;
+		top: -2vw;
+		width: 80vw;
+	}
+	.nft-detail-name .title h2 {
+		font-size: 6vw;
+	}
+	.nft-detail-name .card-rarity {
+		padding: 0px;
+	}
+	.nft-detail-name .card-rarity p {
+		font-size: 3vw;
+	}
+	.nft-detail-attributes {
+		padding: 2vw;
+	}
+	.nft-detail-attributes table {
+		width: 100%;
+	}
+	.nft-detail-attributes table tr td.attr-bar p, .nft-detail-attributes table tr td {
+		font-size: 3vw;
+		height: 3vw;
+	}
+	.chainlink {
+    align-items: center;
+	}
+	.chainlink img {
+		height: 6vw;
+		margin-left: 1vw;
+	}
+	.chainlink p {
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
+	}
+	.chainlink p.capitalise {
+		display: none;
+	}
+	.nft-detail-extras {
+		margin-bottom: 5vh;
+	}
+	.header.agora {
+    padding-top: 20vw;
+	}
+	.header.agora .bg-image img {
+		width: 150vw;
+    height: 22.65vw;
+    margin-left: -25vw;
+	}
+	.agora .logo {
+    top: 25vw;
+    left: calc(50% - 25vw);
+	}
+	.agora .logo img {
+    width: 50vw;
+	}
+	.back-button button div {
+		padding: 1.2vw 3vw .4vw 3vw;
+	}
+}
+
+
+/***** COLORS *****/
+
+.secretrare {
+	background-color: #E431FF;
+}
+
+.ultrarare{
+	background-color: #31FF5D;
+}
+
+.rare{
+	background-color: #FFD131;
+}
+
+.uncommon{
+	background-color: #318DFF;
+}
+
+.common{
+	background-color: #D9D9D9;
+}

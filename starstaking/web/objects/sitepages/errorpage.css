@@ -1,0 +1,89 @@
+.errorpage {
+	width: 66vw;
+	background-color: #000;
+	padding: 30vh 2vw 20vh 2vw;
+	z-index: 10;
+	margin: 0vh 14vw;
+	color: #ffffff;
+	text-align: center;
+}
+
+.error-content button {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vw;
+	line-height: 1.2vw;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	border-radius: 100px;
+	border: 0px;
+	margin-left: 10px;
+	padding: 0.8em 1.6em;
+}
+
+.error-content button.no-color {
+	background: black;
+	border: 2px solid white;
+}
+
+.error-content button div {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.18vw 0 -0.18vw 0;
+}
+
+.error-content h2 {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.4vw;
+	line-height: 1.3em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.error-content p {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2vw;
+	line-height: 1.3em;
+	/* identical to box height */
+
+	letter-spacing: 0.05em;
+}
+
+.error-content .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.errorpage {
+    width: 80vw;
+    margin: 0vh 8vw;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.errorpage {
+    width: 100%;
+		margin: 0px;
+	}
+	.error-content h2 {
+		font-size: 8vw;
+	}
+	.error-content p {
+		font-size: 4vw;
+	}
+	.error-content button {
+		font-size: 2vw;
+	}
+	.error-content button div {
+    margin: 0.513vw 0 -0.513vw 0;
+	}
+}

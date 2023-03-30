@@ -1,0 +1,7 @@
+{
+    "title": "Agora Sentinel",
+    "description": "Agora Sentinel Wallet Management",
+    "canonical_url": "https://agora.jedstar.app/sentinel",
+    "post_graphic_url": "/img/agora/web_preview_v01.jpg",
+    "additionalLoadFullJS": "document.getElementById('connect_btn').disabled = true; document.querySelector('#connect_btn span').innerHTML='Loading'; shield('/js-lib/KV-TEMP.js', function(){shield('/js/JEDKRED-web3wallet-status.js', null, 'head', 'script', 0); }, 'head', 'script', 0);"
+  }

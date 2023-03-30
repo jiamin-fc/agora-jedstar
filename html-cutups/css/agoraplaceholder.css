@@ -1,0 +1,21 @@
+.placeholder-content {
+	width: 100vw;
+	height: 90vh;
+	background: url(../img/agora/genesis_name_promo_noLogo_v02.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+.placeholder-text {
+	position: absolute;
+	bottom: 28vh;
+	width: 100vw;
+	text-align: center;
+}
+
+.placeholder-image img {
+	width: 200vw;
+	margin-left: -50vw;
+}

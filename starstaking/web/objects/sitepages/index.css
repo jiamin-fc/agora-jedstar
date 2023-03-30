@@ -1,0 +1,537 @@
+/* BASE CSS */
+
+body {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+}
+
+.white {
+	color: white;
+}
+
+.background-image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+}
+
+.background-image img {
+	width: 100%;
+}
+
+.intro-container {
+	margin-bottom: 200px;
+}
+
+.index-container {
+	display: none;
+}
+
+.header {
+	margin-bottom: 30px;
+}
+
+.header .logos, .header .logos div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .logos img {
+	height: 80px;
+	margin: 30px 10px;
+}
+
+.header-text {
+	max-width: 350px;
+	margin: auto;
+}
+
+.stake-picks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.pick {
+	background-color: #13181D;
+	border-radius: 50%;
+	padding: 20px 40px;
+}
+
+.pick img {
+	width: 120px;
+}
+
+.pick-space {
+	padding-bottom: 20px;
+}
+
+.pick button div {
+	padding: 12px 10px 10px 10px
+}
+
+.total {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+}
+
+.total-box {
+	background-color: #202225;
+	padding: 10px 40px;
+	position: relative;
+	flex-grow: 1;
+	width: 90%;
+}
+
+.total-box::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-image: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	left: 0px;
+	bottom: 0px;
+}
+
+.total-box p {
+	margin: 10px 0px;
+	letter-spacing: 0.05em;
+}
+
+.total-box h2 {
+	margin: 10px 0px;
+	
+}
+
+.stakes {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0px;
+}
+
+.stake {
+	width: 25vw;
+	position: relative;
+	background-color: #262C33;
+	display: flex;
+	flex-direction: column;
+}
+
+.stake-title {
+	text-align: center;
+	background-color: #13181D;
+}
+
+.stake-title p {
+	letter-spacing: 0.05em;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+.stake-title h3 {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+}
+
+.stake .stake-day h2 {
+	margin: 0px;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+.stake .stake-day img {
+	width: 25vw;
+	display: block;
+}
+
+.stake .stake-day img.logo {
+	width: 40px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.stake input, .stake textarea {
+	background-color: #202225;
+	border: 1px solid #827A8E;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.stake input:not([disabled]) {
+	background-color: #3a3f44;
+	color: #36D100;
+}
+
+.stake p.label, .stake * p.label {
+	margin: 5px 0px 5px 10px;
+}
+
+.form-elem {
+	padding-top: 10px;
+}
+
+.line-two-elem {
+	display: flex;
+	margin: 0px 10px;
+	justify-content: space-between;
+}
+
+.line-two-elem .form-elem input {
+	width: 10vw;
+}
+
+.form-one-elem, .form-area {
+	padding-top: 10px;
+	margin: 0px 10px;
+}
+
+.stake-form .button {
+	border-top: 2px solid #202225;
+	padding: 30px 10px;
+	margin: 30px 10px 10px 10px;
+}
+
+.button button:disabled {
+	background: #6B6B6B;
+}
+
+.stake-form .button button:disabled div{
+	color: #6B6B6B;
+	text-shadow: none;
+	background: #262C33;
+}
+
+.stake-form .button button {
+	width: 100%;
+}
+
+.stake-form .button p {
+	text-align: center;
+}
+
+.all-staking {
+	display: flex;
+	justify-content: flex-start;
+	gap: 2.5vw;
+}
+
+.all-staking * .button button {
+	margin-top: 10px;
+}
+
+.stake-form .button button div {
+	padding: 12px 0px 10px 0px;
+}
+
+.input-join {
+	display: flex;
+	position: relative;
+}
+
+.max {
+	position: absolute;
+	font-weight: 400;
+	right: 5px;
+	top: 7px;
+	color: #21B5FF;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.input-join .capitalise {
+	width: 50px;
+}
+
+.input-join input:not(.capitalise) {
+	flex-grow: 1;
+}
+
+p.warning {
+	color: #C82828;
+	text-align: right;
+}
+
+.stake * input.exceed {
+	color: #C82828;
+}
+
+.mykred {
+	color: #827A8E;
+	font-weight: 700;
+	text-align: right;
+}
+
+.stake-form, .form-area {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+}
+
+.form-area .label {
+	text-align: left;
+}
+
+.kdarena {
+	text-align: left;
+	border: 1px solid #827A8E;
+	background-color: #202225;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	flex-grow: 1;
+}
+
+.kdarena ul {
+	margin: 0px;
+}
+
+.kdarena p {
+	padding: 1em 2em;
+	padding-left: 1em;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	margin: 0px;
+}
+
+.kdarenatitle {
+	color: #FF00B2;
+}
+
+.kdarena-more {
+	color: #21B5FF;
+	text-align: right;
+}
+
+.kdarena-more span {
+	cursor: pointer;
+}
+
+/* JED CSS */
+
+body.jed .intro-container {
+	display: none;
+}
+
+body.jed .index-container {
+	display: block;
+}
+
+/* STAKED CSS */
+
+.stake .maturity, .stake * .claimBtn, .stake.staked * .stakeBtn {
+	display: none;
+}
+
+.stake.staked .maturity, .stake.staked * .claimBtn, .stake * .stakeBtn {
+	display: block;
+}
+
+/* TEMP CSS */
+
+.hide {
+	display: none;
+}
+
+/* LOADING CSS */
+
+.loading-bar {
+	width: 0%;
+	background: linear-gradient(338deg, #21B5FF 0%, #FF00B2 100%);
+	height: 3px;
+	margin-top: 10px;
+  animation-duration: 30s;
+}
+
+.loading-bar.start {
+  animation-name: load;
+}
+
+@keyframes load {
+  from {width: 100%;}
+  to {width: 0%;}
+}
+
+@media only screen and (max-width: 1024px){
+	.stakes {
+    align-items: center;
+		gap: 30px;
+    flex-direction: column;
+	}
+	
+	.stake, .stake .stake-day img:not(.logo) {
+    min-width: 300px;
+	}
+
+	.popup.active{
+		height: 60vh;
+		width: 85vw;
+	}
+
+	.popup.active .title h2{
+		margin-top: 10vh;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.total {
+    flex-direction: column;
+	}
+	.header .logos img {
+    height: 60px;
+
+	}
+	.line-two-elem {
+    flex-direction: column;
+	}
+	.line-two-elem .form-elem input {
+		width: 96%;
+	}
+	p.warning {
+		margin: 0px;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.header .logos {
+    flex-wrap: wrap;
+	}
+	
+	.header .logos img {
+    margin: 10px 10px;
+	}
+
+	.popup.active{
+		height: 60vh;
+		width: 85vw;
+	}
+
+	.popup.active .title h2{
+		margin-top: 10vh;
+	}
+}
+
+/* 	POPUP */
+
+.popup{
+	position: fixed;
+	text-align: center;
+	height: 30vh;
+	width: 50vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #262C33;
+	border-radius: 0px;
+	background: #13181D;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	overflow-y: scroll !important;
+}
+
+#info-popup.active{
+	visibility: visible;
+	opacity: 1;
+}
+
+#info-popup .title{
+	display: inline-flex;
+	padding-top: 3vh;
+}
+
+#info-popup .title h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#info-popup p{
+	padding: 3vh;
+}
+
+.popup .title{
+	display: inline-flex;
+	padding-top: 3vh;
+}
+
+.popup .title h2{
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.close-button {
+	position: absolute;
+	right: 0;
+}
+
+.close-button img{
+	cursor: pointer;
+	width: 40%;
+}
+
+.section {
+	transition: 0.5s;
+}
+
+.section.active {
+	filter:blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+
+
+.background-image.active {
+	filter:blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+
+/* CARDS DIMMER */
+
+
+.dimmer{
+	background: rgba(0,0,0,.8);
+	width:25vw;
+	height:100%;
+	position:absolute;
+	display: flex;
+	z-index:998;
+}
+
+.dimmer p{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+#connect_btn:disabled{
+	background: grey;
+	opacity: 0.5;
+}

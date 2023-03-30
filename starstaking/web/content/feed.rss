@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	>
+<channel><atom:link href="https://www.silvervolt.app/feed.rss" rel="self" type="application/rss+xml" />
+<title>Silvervolt - Get your gaming top up for free!</title>
+<link>https://www.silvervolt.app</link>
+<description>Get your gaming top up for free!</description>
+<lastBuildDate>Tue, 28 Jun 2022 17:06:42 +0800</lastBuildDate>
+<language>en-US</language>
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<generator>Silvervolt RSS Feed Creator v1,0</generator>
+<item><title>Tried the most popular mobile game yet? Mobile Legends: Bang Bang. Get Free Diamonds</title>
+<link>https://www.silvervolt.app/blog/2022-06-11-most-popular-mobile-game-mobile-legends-free-diamonds</link>
+<dc:creator><![CDATA[Josh Gier]]></dc:creator>
+<pubDate>Sat, 11 Jun 2022 08:01:17 +0800</pubDate>
+<guid>https://www.silvervolt.app/blog/2022-06-11-most-popular-mobile-game-mobile-legends-free-diamonds</guid>
+<description>With over 80 million monthly players, you know the game has to be good!</description>
+
+<title>Diablo Immortal Class Guide for Beginners - Get Free Eternal Orbs!</title>
+<link>https://www.silvervolt.app/blog/2022-06-10-diablo-immortal-beginners-get-free-eternal-orbs</link>
+<dc:creator><![CDATA[Josh Gier]]></dc:creator>
+<pubDate>Fri, 10 Jun 2022 08:01:17 +0800</pubDate>
+<guid>https://www.silvervolt.app/blog/2022-06-10-diablo-immortal-beginners-get-free-eternal-orbs</guid>
+<description>It's been 2 years since the announcement of Diablo Immortal. We now have it in our hands!</description>
+
+</item>
+</channel>
+
+</rss>

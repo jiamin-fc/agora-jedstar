@@ -1,0 +1,369 @@
+/*** HEADER ***/
+
+.header-button {
+	padding-bottom: 3vw;
+}
+
+.header-background {
+	position: absolute;
+	z-index: -1;
+}
+
+.header-background img {
+	width: 100vw;
+	height: 32.45vw;
+}
+
+.header-marketplace {
+	padding-top: 5vw;
+}
+
+.header-marketplace img {
+	width: 26vw;
+	height: 8.84vw;
+}
+
+.header-is-live {
+	margin: 11vw auto 1vw auto;
+	width: 50vw;
+	background: radial-gradient(50% 50% at 40.82% 49.16%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-is-live p {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.2vw;
+	margin: 0px;
+}
+
+.carousel {
+	margin-top: -87.35px;
+	overflow-x: scroll;
+	width: 100vw;
+	position: relative;
+	display: flex;
+	transition: all 1s;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-tab {
+	display: flex;
+	width: 100vw;
+	background-image: url("../img/agora/genesis_nft_card_grid_v01 1.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.carousel-content {
+	text-align: left;
+	padding: calc(5vw + 87.35px) 30vw 15vw 10vw;
+	width: 30vw;
+	background-image: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+}
+
+.extra-space {
+	width: 30vw;
+}
+
+.carousel-tab * h3 {
+	text-align: left;
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
+
+.carousel-tab * h2 {
+	font-size: 3em;
+}
+
+.carousel-pagination {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	width: 100vw;
+	gap: 5px;
+	z-index: 10;
+}
+
+.carousel-pagination div {
+	width: 20px;
+	border-bottom: 2px solid #999;
+}
+
+.carousel-pagination div:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.carousel-pagination div.active {
+	border-bottom: 2px solid #fff;
+}
+
+
+
+/*** INFO ***/
+
+.info div .title h2 {
+	background: linear-gradient(109.55deg, #21B5FF 0%, #FF00B2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	text-align: center;
+}
+
+.info .rainbow-border {
+	margin-left: 10vw;
+}
+
+/*** ABOUT ***/
+
+.about {
+	width: 60vw;
+	margin: 5vw auto 0vw auto;
+	max-height: 200vw;
+	overflow: hidden;
+	position: relative;
+	transition: all .5s;
+}
+
+.about.close {
+	max-height: 15vw;
+}
+
+.about .subtitle h3 {
+	margin-top: 3vw;
+}
+
+.about-logos {
+	display: flex;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.about-logos img {
+	width: 20vw;
+	display: inline;
+}
+
+.about-button {
+	text-align: center;
+	margin: 2vw auto 1vw auto;
+}
+
+.about-more {
+	display: none;
+	align-items: flex-end;
+	justify-content: center;
+	position: absolute;
+	width: 60vw;
+	height: 15vw;
+	top: 0vw;
+	background: linear-gradient(0deg, #13181D 10%, rgba(0,0,0,0) 100%);
+}
+
+.about-more span {
+	cursor: pointer;
+	color: #1C84FE;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vw;
+	margin-bottom: 2vw;
+}
+
+.about.close .about-more {
+	display: flex;
+}
+
+.topButton {
+	position: fixed;
+	bottom: 8vh;
+	right: 3vw;
+	z-index: 999;
+}
+
+.topButton img {
+	width: 3vw;
+	height: 3vw;
+}
+
+.view-buy-button {
+	text-align: center;
+	margin: 0vw auto 5vw auto;
+}
+
+.view-buy-button button {
+	margin: 1vw;
+}
+
+.view-buy-button button div, .about-button button div, .carousel-button button div {
+	padding: 0.8vw 1.5vw 0.6vw 1.5vw;
+	text-shadow: 0px 0px 17.7152px rgba(255, 255, 255, 0.5);
+}
+
+/***** COLLECTIONS *****/
+
+.collections {
+	width: 80vw;
+	margin: 0vw 10vw 0vw 10vw;
+}
+
+.collection-links {
+	margin: 5vw auto 0vw auto;
+	width: 80vw;
+	display: none;
+}
+
+/***** FEATURED COLLECTION *****/
+
+.featured-collection {
+	width: 80vw;
+	margin: 2vw 10vw 5vw 0vw;
+}
+
+.featured-collection .cards {
+	justify-content: flex-start;
+	gap: 2vw;
+}
+
+.feature {
+	width: 20vw;
+}
+
+.feature .title h2 {
+	background: linear-gradient(90deg, #BC4BC7 16.11%, #00AAFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	text-align: center;
+}
+
+.feature-image {
+	text-align: center;
+}
+
+.feature-image img {
+	width: 15vw;
+	margin: 0px auto 2vw auto;
+}
+
+@media only screen and (max-width: 1024px){
+	.about-more span {
+		font-size: 1.5vw;
+	}
+	.topButton img {
+		width: 4vw;
+		height: 4vw;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.carousel-tab {
+    background-size: cover;
+	}
+	.carousel-content {
+		padding: calc(5vw + 87.35px) 10vw 15vw 10vw;
+    width: 80vw;
+		background-image: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%);
+	}
+	.carousel-pagination {
+    margin-top: -30px;
+    margin-bottom: 30px;
+	}
+	.extra-space {
+		display: none;
+	}
+	.carousel-tab * h3 {
+		font-size: 2em;
+	}
+	.trapezoid-left, .trapezoid-right {
+		display: none;
+	}
+	.about {
+		width: 80vw;
+	}
+	.info .rainbow-border {
+		margin-left: 10vw;
+		width: 80vw;
+	}
+	.collections .rainbow-border {
+		width: 80vw;
+	}
+	.collections {
+		width: 80vw;
+		margin: 0vw 10vw;
+	}
+	.collection::before, .collection-links::before {
+		content: '';
+		display: block;
+		height: calc(10vh + 10px);
+		margin-top: -10vh;
+		visibility: hidden;
+	}
+	.topButton img {
+		width: 9vw;
+		height: 9vw;
+	}
+	.featured-collection {
+		margin: 7vw 0vw;
+		width: 80vw;
+	}
+	.feature {
+    width: 80vw;
+	}
+	.feature-image img {
+		width: 60vw;
+	}
+	.featured-collection .cards {
+		gap: 5vw;
+	}
+	.about.close {
+		max-height: 50vw;
+	}
+	.about.close .about-more {
+		width: 80vw;
+		height: 50vw;
+	}
+	.about-more span {
+		font-size: 3vw;
+	}
+	.about .subtitle h3 {
+		font-size: 6vw;
+	}
+	.about-logos img {
+		width: 40vw;
+	}
+	.view-buy-button button div, .about-button button div {
+    padding: 4vw 0vw 3.6vw 0vw;
+		width: 60vw;
+	}
+	.collection-links {
+		display: block;
+		text-align: center;
+		margin-bottom: 5vw;
+	}
+	.collection-links h2 {
+		margin: 0px;
+	}
+	.collection-links h2 a {
+		font-family: 'Josefin Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 3vw;
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.social-strip {
+    flex-wrap: wrap;
+	}
+}

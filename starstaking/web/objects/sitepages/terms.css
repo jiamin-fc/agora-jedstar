@@ -1,0 +1,97 @@
+.section.title {
+	background: transparent;
+}
+.title {
+	padding: 6em 0 1em 0;
+	text-align: center;
+	display: block;
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.2vw;
+	line-height: 3vw;
+	text-align: center;
+	letter-spacing: 0.11em;
+	color: #FFFFFF;
+}
+.title h1 {
+	margin: 0px;
+	padding-top: 2em;
+}
+.section {
+  background: #000;
+  width: 60vw;
+  margin: 0 14vw;
+  padding: 0 5vw 3em 5vw;
+}
+.privacy-tc {
+	flex-direction: column;
+	padding-top: 2rem;
+}
+.privacy-tc p, .privacy-tc ul li {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: #ccc;
+	margin-top: 0px;
+}
+.privacy-tc ul {
+	margin-top: 0px;
+	padding-left: 1rem;
+}
+
+.privacy-tc ul li {
+	list-style-type: none;
+}
+
+.text-title {
+  font-weight: 700;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 1.1vw;
+  color: #FFF;
+  line-height: 2em;
+}
+
+@media only screen and (max-width: 767px) {
+	.section {
+		width: auto;
+		margin: 0;
+		position: relative;
+	}
+	.title {
+		top: 3em;
+		font-size: 3.2vw;
+	}
+	.title h1 {
+		padding-bottom: 1em;
+	}
+	.privacy-tc {
+		padding: 0 5vw 1em 5vw;
+	}
+	.text-title {
+		font-size: 4.6vw;
+		line-height: 1.3em;
+	}
+	.privacy-tc p, .privacy-tc ul li {
+		line-height: 1.3em;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.section {
+		width: 74vw;
+		margin: 0 8vw;
+		padding: 1em 5vw;
+	}
+	.title {
+		font-size: 2vw;
+		line-height: 3em; 
+	}
+	.text-title {
+		font-size: 2.5vw;
+		line-height: 1.6em;
+	}
+}

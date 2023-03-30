@@ -1,0 +1,8 @@
+{
+  "title": "Agora NFT Marketplace",
+  "description": "The AGORA Marketplace is JEDSTAR Gaming's digital sci-fi bazaar for all your gaming assets and NFT's. You can buy, sell, trade, resurrect, and improve your JEDSTAR Character cards. Our first ever mint is the GENESIS Mint, featuring 18 unique designs in four distinctive collections.",
+  "canonical_url": "https://agora.jedstar.app/admin",
+  "post_graphic_url": "/img/agora/web_preview_v01.jpg",
+  "additionalLoadFullJS": "shield('/js-lib/KV-TEMP.js', function(){shield('/js/agora.js', function(){shield('/js/admin.js', null, 'head', 'script', 0);}, 'head', 'script', 0);}, 'head', 'script', 0);",
+  "requires-php": false
+}

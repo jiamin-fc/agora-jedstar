@@ -1,0 +1,97 @@
+.index-container {
+	padding: 100px 10vw;
+	width: 80vw;
+}
+
+.title {
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.title span {
+	color: #1C84FE;
+}
+
+.button button:disabled {
+	background: #6B6B6B;
+	cursor: not-allowed;
+}
+
+.button button:disabled div {
+	color: #6B6B6B;
+	text-shadow: none;
+	background: #262C33;
+}
+
+.button .activateBtn {
+	display: none;
+}
+
+.currency-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.currency {
+	text-align: center;
+	border: 1px solid gray;
+	width: 300px;
+	padding: 20px 0px;
+}
+
+.currency-logo {
+	width: 150px;
+	height: 150px;
+	filter: grayscale(100%);
+	margin: auto;
+}
+
+.currency-logo img {
+	width: 100%;
+}
+
+.button {
+	padding-bottom: 10px;
+}
+
+.currency-message p {
+	font-size: 1em;
+	color: #FFD131;
+}
+
+.activate {
+	text-align: center;
+	padding-top: 40px;
+}
+
+/*** AUTHORISED ***/
+
+.currency.authorised .currency-logo {
+	filter: grayscale(100%);
+}
+
+.currency.authorised .currency-message p {
+	color: #FFFFFF;
+}
+
+.currency.authorised .button .authoriseBtn {
+	display: none;
+}
+
+.currency.authorised .button .activateBtn {
+	display: block;
+}
+
+/*** ACTIVATED ***/
+
+.currency.activated .currency-logo {
+	filter: grayscale(0%);
+}
+
+.currency.activated .currency-message p {
+	color: #31FF5D;
+}
+
+.currency.activated .button .authoriseBtn, .currency.activated .button .activateBtn {
+	display: none;
+}

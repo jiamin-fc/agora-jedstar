@@ -1,0 +1,54 @@
+.fnBox {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.fnName {
+  width: calc(100% - 10px);
+  display: block;
+  background: rgb(77, 77, 77);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 9px;
+}
+
+button.executeOnChain {
+  background: #9696ff;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.fnResults textarea {
+  background: #ffffea;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+  width: 90%;
+}
+.fnResults:empty {
+  background: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+.fnFields input {
+  width: 90%;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}

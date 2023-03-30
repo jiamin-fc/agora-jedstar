@@ -1,0 +1,106 @@
+
+
+/***** MYAGORA PAGE *****/
+
+.myagora-page {
+	width: 80vw;
+	min-height: 80vh;
+	margin-left: 10vw;
+	padding-top: 2vw;
+}
+
+.myagora-page .title {
+	padding-top: 2vw;
+}
+
+.myagora-page .title h1 {
+	font-family: 'Josefin Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3vw;
+	text-transform: uppercase;
+	font-feature-settings: 'calt' off;
+	margin: 0px;
+}
+
+.myagora-cards {
+	display: flex;
+	margin: 3vw 0vw 7vw 0vw;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.myagora-cards .card {
+	padding-bottom: 6vw;
+	background: linear-gradient(180deg, #262C33 55.21%, rgba(38, 44, 51, 0) 100%);
+}
+
+.myagora-cards .card * {
+	cursor: pointer;
+}
+
+/***** HEADER *****/
+
+.header.agora {
+	padding-top: 0px;
+	position: relative;
+}
+
+.header.agora .bg-image img {
+	width: 100vw;
+	height: 15.1vw;
+}
+
+.agora .logo {
+	position: absolute;
+	top: 6vw;
+	left: calc(50% - 15vw);
+}
+
+.agora .logo img {
+	width: 30vw;
+}
+
+.back-button {
+	padding-bottom: 2vw;
+}
+
+
+/**** MY AGORA - MOBILE ***/
+
+@media only screen and (max-width: 767px){
+	.myagora-page {
+		width: 90vw;
+    margin-left: 5vw;
+	}
+	.myagora-page .rainbow-border{
+		width: 90vw;
+		margin: 3vw 0vw;
+	}
+	.myagora-page .title h1 {
+    font-size: 7vw;
+		padding-bottom: 2vw;
+	}
+	.myagora-cards {
+    justify-content: flex-start;
+		gap: 5vw;
+	}
+	.header.agora {
+    padding-top: 20vw;
+	}
+	.header.agora .bg-image img {
+		width: 150vw;
+    height: 22.65vw;
+    margin-left: -25vw;
+	}
+	.agora .logo {
+    top: 25vw;
+    left: calc(50% - 25vw);
+	}
+	.agora .logo img {
+    width: 50vw;
+	}
+	.back-button button div {
+		padding: 1.2vw 3vw .4vw 3vw;
+	}
+}
