@@ -39,12 +39,19 @@ var Settings = {
 // */
 
   currencies: {
-    "USDT": {contract: "0x55d398326f99059fF775485246999027B3197955"},
-    "DAI": {contract: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"},
-    "BUSD": {contract: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"},
-    "USDC": {contract: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"},
-    "KREDT": {contract: "0x071549f11ade1044d338A66ABA6fA1903684Bec9"},
+//    "USDT": {contract: "0x55d398326f99059fF775485246999027B3197955"},
+//    "DAI": {contract: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3"},
+//    "BUSD": {contract: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"},
+//    "USDC": {contract: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"},
+//    "KREDT": {contract: "0x071549f11ade1044d338A66ABA6fA1903684Bec9"},
     //["KRED", "0xeA79d3a3a123C311939141106b0A9B1a5623696f"]
+    
+    "USDT": {contract: "0xA02f6adc7926efeBBd59Fd43A84f4E0c0c91e832"},
+    "DAI": {contract: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"},
+    "BUSD": {contract: "0xdAb529f40E671A1D4bF91361c21bf9f0C9712ab7"},
+    "USDC": {contract: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"},
+    "KREDT": {contract: "0x5e6602B762F76d8BFDC7321AA0B787B1E67b187F"}, // new changes to polygon network
+
   },
   _loaded: function(ct){
     Settings._loadedcts[ct] = true;
